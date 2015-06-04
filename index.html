@@ -33,17 +33,11 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="row bodyContainer">
-			<section class="leftContainer col-md-2 col-sm-3">
-				<ul id="leftNav">
-					<li data-ng-repeat="menu in leftMenu">
-						<a class="btn btn-default">{{menu}}</a>
-					</li>
-				</ul>
-			</section>
-			<section class="centerContainer col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3" data-ng-view="">
-			</section>
+		<div class="row bodyContainer" data-ng-view="">
 		</div>
+		<footer>
+			&copy; 2015 Suman Barick
+		</footer>
 	</div>
 </body>
 </html>

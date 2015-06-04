@@ -58,3 +58,31 @@ header {
 	border: 1px solid #CCC;
 	height: 100px;
 }
+
+footer {
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+/*** login page specific styles ***/
+.loginPage form {
+	padding: 10px 30px 30px;
+}
+
+.loginPage form div {
+	margin-top: 15px;
+}
+
+.loginPage #topNav {
+	display: none;
+}
+
+.loginPage header {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.loginPage .bodyContainer {
+	margin-top: 151px;
+}
+
