@@ -1,0 +1,60 @@
+ul {
+	padding-left: 0; /*Bootstrap always gives padding left 40px*/
+	margin-bottom: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+.headContainer {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	background: #FFF;
+}
+
+header {
+	border-bottom: 1px solid #CCC;
+	padding-bottom: 25px;
+}
+
+#topNav {
+	width: 100%;
+	display: table;
+}
+
+#topNav li {
+	text-align: center;
+	display: table-cell;
+}
+
+.bodyContainer {
+	margin-top: 211px;
+	background: #EEE;
+}
+
+.leftContainer {
+	padding: 10px 0;
+	text-align: center;
+	background: #EEE;
+	position: fixed;
+}
+
+#leftNav li {
+	margin-top: 7px;
+}
+
+.centerContainer {
+	padding-top: 15px; 
+	background: #FFF;
+}
+
+.itemExtContainer {
+	padding: 5px;
+}
+
+.itemContainer {
+	border: 1px solid #CCC;
+	height: 100px;
+}
