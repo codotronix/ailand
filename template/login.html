@@ -1,5 +1,5 @@
 <!-- Login Section -->
-<form class="col-sm-6 col-xs-12 regForm">
+<form class="col-sm-6 col-xs-12 regForm" method="POST" action="/bump.php">
 	<h2 class="col-md-12">
 		Welcome to ISLAND
 	</h2>
@@ -7,19 +7,24 @@
 		Sign Up to enter 
 	</h4>
 	<div class="col-md-6">
-		<input class="form-control" type="text" id="firstName" name="firstName" placeholder="First name"/>
+		<input class="form-control required" type="text" id="firstName" name="firstName" placeholder="First name"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-6">
-		<input class="form-control" type="text" id="lastName" name="lastName" placeholder="Last name"/>
+		<input class="form-control required" type="text" id="lastName" name="lastName" placeholder="Last name"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="text" id="chosenUName" name="chosenUName" placeholder="Choose an username"/>
+		<input class="form-control required" type="text" id="chosenUName" name="chosenUName" placeholder="Choose an username"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="password" id="chosenPswd" name="chosenPswd" placeholder="Choose a password"/>
+		<input class="form-control required" type="password" id="chosenPswd" name="chosenPswd" placeholder="Choose a password"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="password" id="reChosenPswd" name="reChosenPswd" placeholder="Re-enter the password"/>
+		<input class="form-control required" type="password" id="reChosenPswd" name="reChosenPswd" placeholder="Re-enter the password"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
 		<label class="col-xs-4"><input type="radio" name="gender" value="M"checked="checked"> Male</label>
@@ -27,7 +32,7 @@
 		<label class="col-xs-4"><input type="radio" name="gender" value="O"> Other</label>
 	</div>
 	<div class="col-md-12">
-		<input type="button" class="btn btn-primary btn-lg btn-block" id="signup" value="Sign Up"/>
+		<input type="submit" class="btn btn-primary btn-lg btn-block" id="signup" value="Sign Up"/>
 	</div>
 </form>
 
@@ -40,12 +45,14 @@
 		Please Sign In 
 	</h4>
 	<div class="col-md-12">
-		<input class="form-control" type="text" id="userName" name="userName" placeholder="Enter username"/>
+		<input class="form-control required" type="text" id="userName" name="userName" placeholder="Enter username"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input class="form-control" type="password" id="pswd" name="pswd" placeholder="Enter password"/>
+		<input class="form-control required" type="password" id="pswd" name="pswd" placeholder="Enter password"/>
+		<span class="error-icon"></span>
 	</div>
 	<div class="col-md-12">
-		<input type="button" class="btn btn-success btn-lg btn-block" id="signin" value="Sign In"/>
+		<input type="submit" class="btn btn-success btn-lg btn-block" id="signin" value="Sign In"/>
 	</div>
 </form>

@@ -7,6 +7,29 @@ ul li {
 	list-style: none;
 }
 
+.customJumbo {
+	margin-bottom: 25px;
+  	background: #0082ff;
+  	padding-bottom: 10px;  	
+}
+
+.customJumbo label {
+	display: block;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.customJumbo .sitename {
+	font-weight: bold;  	
+  	background: #0082ff;  	
+  	font-size: 80px;
+}
+
+.customJumbo .tagLine {
+	font-size: 18px;
+}
+
 .headContainer {
 	position: fixed;
 	width: 100%;
@@ -30,7 +53,7 @@ header {
 }
 
 .bodyContainer {
-	margin-top: 211px;
+	margin-top: 134px;
 	background: #EEE;
 }
 
@@ -64,6 +87,20 @@ footer {
 	margin: 20px 0 0 0;
 }
 
+.error {
+	border-color: red;
+}
+
+.error-icon {
+	display: none;
+	background: url("../images/error.png") no-repeat 0 0;	
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	right: 20px;
+	top: 6px;
+}
+
 /*** login page specific styles ***/
 .loginPage form {
 	padding: 10px 30px 30px;
@@ -83,6 +120,26 @@ footer {
 }
 
 .loginPage .bodyContainer {
-	margin-top: 151px;
+	margin-top: 174px;
+}
+
+/************ MEDIA QUERIES ***********/
+
+@media screen and (max-width: 767px) {
+	.customJumbo .sitename {
+		font-size: 50px;
+	}
+
+	.customJumbo .tagLine {
+		font-size: 16px;
+	}
+
+	.bodyContainer {
+		margin-top: 191px;
+	}
+
+	.loginPage .bodyContainer {
+		margin-top: 131px;
+	}
 }
 
